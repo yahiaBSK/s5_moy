@@ -53,16 +53,29 @@ input:focus{
 h1{
   text-align: center;
   font-size: 25px;
+  color: rgba(116, 0, 0, 1);
+  line-height: 35px;
+}
+#s{
   color: rgba(0, 71, 119, 1);
 }
 hr{
   width: 200px;
   border: none;
   background-color: rgba(0, 71, 119, 0.50);
-  height: 3px;
+  height: 2px;
   border-radius: 100px;
-  margin-bottom: 60px;
-  margin-top: 10px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  animation: hr-animation 1s ease ;
+}
+@keyframes hr-animation{
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 200px;
+  }
 }
 h3{
   margin-top: 40px;
@@ -73,6 +86,8 @@ h3{
 h3::before{
   content: "•";
  margin-right: 5px;
+ margin-left: -10px;
+ color: rgba(116, 0, 0, 1);
 }
 span{
   color: rgba(116, 0, 0, 1);
@@ -121,6 +136,7 @@ span{
   width: 90%;
   margin: auto;
   margin-top: 10px;
+  font-size: 24px;
 }
 
 .degree-bad{
@@ -132,6 +148,7 @@ span{
   width: 90%;
   margin: auto;
   margin-top: 10px;
+  font-size: 24px;
 }
 #degreeh{
   box-shadow: 0 0 0 3px #7fa3bb;
@@ -145,7 +162,7 @@ span{
 
 footer{
   position: absolute;
-  bottom: -15%;
+  bottom: -17%;
   left: 0;
   right: 0;
   text-align: center;
@@ -159,8 +176,11 @@ footer{
 footer div{
   padding: 40px;
 }
-footer span{
+footer {
+}
+footer #by{
   color: rgba(189, 228, 255, 1);
+  font-weight: 700;
 }
 footer button{
   color: white;
@@ -179,4 +199,23 @@ footer button:hover{
   background-color: white;
   color: rgba(0, 71, 119, 1);
   border-radius: 100px;
+}
+#checked{
+  font-size: 20px;
+  margin-left: 10px;
+  transform: translateY(1px);
+}
+@keyframes checked-animation{
+  0%{
+    transform: translateY(1px) scale(1)
+  }
+  30%{
+    transform: translateY(1px) scale(1.5)
+  }
+  60%{
+    transform: translateY(1px) scale(0.7)
+  }
+  100%{
+    transform: translateY(1px) scale(1)
+  }
 }

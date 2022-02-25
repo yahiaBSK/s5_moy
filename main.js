@@ -97,3 +97,15 @@ function calcule(){
 submit.addEventListener("click", ()=>{
   calcule()
 })
+
+
+
+
+let checked = document.querySelector("#checked")
+
+setInterval(()=>{
+  checked.style = "animation: checked-animation 0.5s ease"
+  setTimeout(() => {
+    checked.style = "none"
+  }, 1000)
+},6000)
