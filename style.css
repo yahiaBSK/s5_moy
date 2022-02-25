@@ -194,7 +194,7 @@ footer button{
   transition: 0.3s ease;
   margin-left: -5px;
 }
-footer button:hover{
+footer button:focus{
   transform: scale(0.8);
   background-color: white;
   color: rgba(0, 71, 119, 1);
