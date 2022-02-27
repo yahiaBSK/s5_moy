@@ -140,7 +140,7 @@ span{
   font-size: 24px;
   opacity: 0;
   transition: 0.3s ease;
-  height: 30px;
+  height: 32px;
 }
 .degree-bad, .credit-bad{
   color: rgba(148, 0, 0, 1);
@@ -154,7 +154,7 @@ span{
   font-size: 24px;
   opacity: 0;
   transition: 0.3s ease;
-  height: 30px;
+  height: 32px;
 }
 .degree, .credit{
   color: rgba(148, 0, 0, 1);
