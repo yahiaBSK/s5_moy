@@ -67,7 +67,7 @@ hr{
   border-radius: 100px;
   margin-bottom: 40px;
   margin-top: 40px;
-  animation: hr-animation 1s ease ;
+  animation: hr-animation 2s ease ;
 }
 @keyframes hr-animation{
   0%{
@@ -102,6 +102,7 @@ span{
   color: white;
   font-weight: 700;
   margin-top: 40px;
+  margin-bottom: 20px;
   outline: none;
   transition: 0.2s ease;
   letter-spacing: 0.5px;
@@ -127,7 +128,7 @@ span{
   margin-bottom: 10px;
   box-shadow: 0 0 0 3px #7fa3bb;
 }
-.degree-good{
+.degree-good, .credit-good{
   color: rgba(20, 148, 0, 1);
   background-color: rgba(20, 148, 0, 0.10);
   font-weight: 700;
@@ -137,9 +138,11 @@ span{
   margin: auto;
   margin-top: 10px;
   font-size: 24px;
+  opacity: 0;
+  transition: 0.3s ease;
+  height: 30px;
 }
-
-.degree-bad{
+.degree-bad, .credit-bad{
   color: rgba(148, 0, 0, 1);
   background-color: rgba(148, 0, 0, 0.10);
   font-weight: 700;
@@ -149,6 +152,26 @@ span{
   margin: auto;
   margin-top: 10px;
   font-size: 24px;
+  opacity: 0;
+  transition: 0.3s ease;
+  height: 30px;
+}
+.degree, .credit{
+  color: rgba(148, 0, 0, 1);
+  margin: auto;
+  padding: 3px 10px;
+  width: 90%;
+  margin-top: 10px;
+  height: 30px;
+  font-size: 24px;
+  transition: 0.3s ease;
+}
+#credit-span{
+  color: rgba(0, 71, 119, 1);
+}
+#credit-span::before{
+  content: "";
+  margin: auto;
 }
 #degreeh{
   box-shadow: 0 0 0 3px #7fa3bb;
@@ -156,8 +179,12 @@ span{
   padding: 20px;
   margin: 50px auto;
   width: 95%;
-  margin-bottom: -47.5px;
+  margin-bottom: -90px;
   background-color: white;
+}
+#degreeh::before{
+  content: "";
+  margin: auto;
 }
 
 footer{
@@ -175,8 +202,6 @@ footer{
 }
 footer div{
   padding: 40px;
-}
-footer {
 }
 footer #by{
   color: rgba(189, 228, 255, 1);
