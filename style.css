@@ -1,16 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
 
 
-
-
-
 body {
   margin: 0;
   padding: 0;
   background-color: white;
   position: relative;
 }
-
 *{
   box-sizing: border-box;
   font-family: 'Roboto Condensed', sans-serif;
@@ -42,7 +38,7 @@ input{
   margin: auto;
   font-size: 16px;
   font-weight: 500;
-  transition: 0.2s ease;
+  transition: 0.4s ease;
   margin-top: 10px;
   text-align: center;
   padding: 1px 10px;
@@ -246,7 +242,6 @@ footer button:focus{
     transform: translateY(1px) scale(1)
   }
 }
-
 .span-moy{
   color: black;
 }

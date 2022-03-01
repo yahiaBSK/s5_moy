@@ -52,6 +52,8 @@ let elect_moy_p = document.querySelector(".elect-moy")
 let produc_moy_p = document.querySelector(".produc-moy")
 let mater_moy_p = document.querySelector(".mater-moy")
 let secur_moy_p = document.querySelector(".secur-moy")
+let inputs = document.querySelectorAll("input")
+
 
 
 
@@ -60,38 +62,39 @@ let secur_moy_p = document.querySelector(".secur-moy")
 
 function calcule(){
   
+  
   // transfere moy
-  let trans_moy = ((+trans_td.value*0.4)+(+trans_ex.value*0.6))
-  if (trans_moy>=10) {
+  var trans_moy = ((+trans_td.value * 0.4) + (+trans_ex.value * 0.6))
+  if (trans_moy >= 10) {
     var trans_credit = 4
     trans_moy_p.classList = "span-moy-good"
-  }else{
+  } else {
     var trans_credit = 0
     trans_moy_p.classList = "span-moy-bad"
   }
   
   // machines moy
-  let mach_moy = ((+mach_td.value*0.4)+(+mach_ex.value*0.6))
-  if (mach_moy>=10) {
+  var mach_moy = ((+mach_td.value * 0.4) + (+mach_ex.value * 0.6))
+  if (mach_moy >= 10) {
     var mach_credit = 4
     mach_moy_p.classList = "span-moy-good"
-  }else{
+  } else {
     var mach_credit = 0
     mach_moy_p.classList = "span-moy-bad"
   }
   
   // schema moy
-  let schema_moy = ((+schema_ex.value*0.6)+(+schema_tp.value*0.4))
-  if (schema_moy>=10) {
+  var schema_moy = ((+schema_ex.value * 0.6) + (+schema_tp.value * 0.4))
+  if (schema_moy >= 10) {
     var schema_credit = 3
     schema_moy_p.classList = "span-moy-good"
-  }else{
+  } else {
     var schema_credit = 0
     schema_moy_p.classList = "span-moy-bad"
   }
   
   // systeme moy
-  let syst_moy = ((+syst_td.value*0.4)+(+syst_ex.value*0.6))
+  var syst_moy = ((+syst_td.value * 0.4) + (+syst_ex.value * 0.6))
   if (syst_moy >= 10) {
     var syst_credit = 4
     syst_moy_p.classList = "span-moy-good"
@@ -101,7 +104,7 @@ function calcule(){
   }
   
   // const moy
-  let const_moy = (+const_ex.value)
+  var const_moy = (+const_ex.value)
   if (const_moy >= 10) {
     var const_credit = 2
     const_moy_p.classList = "span-moy-good"
@@ -111,7 +114,7 @@ function calcule(){
   }
   
   // elect moy
-  let elect_moy = ((+elect_td.value*0.4)+(+elect_ex.value*0.6))
+  var elect_moy = ((+elect_td.value * 0.4) + (+elect_ex.value * 0.6))
   if (elect_moy >= 10) {
     var elect_credit = 4
     elect_moy_p.classList = "span-moy-good"
@@ -121,7 +124,7 @@ function calcule(){
   }
   
   // production moy
-  let produc_moy = (+produc_ex.value)
+  var produc_moy = (+produc_ex.value)
   if (produc_moy >= 10) {
     var produc_credit = 1
     produc_moy_p.classList = "span-moy-good"
@@ -131,7 +134,7 @@ function calcule(){
   }
   
   // materiaux moy
-  let mater_moy = (+mater_ex.value)
+  var mater_moy = (+mater_ex.value)
   if (mater_moy >= 10) {
     var mater_credit = 1
     mater_moy_p.classList = "span-moy-good"
@@ -141,7 +144,7 @@ function calcule(){
   }
   
   // securiee moy
-  let secur_moy = (+secur_ex.value)
+  var secur_moy = (+secur_ex.value)
   if (secur_moy >= 10) {
     var secur_credit = 1
     secur_moy_p.classList = "span-moy-good"
@@ -150,7 +153,7 @@ function calcule(){
     secur_moy_p.classList = "span-moy-bad"
   }
   
-  
+ 
     // TP credit 
   // - TP electronique
   if (elect_tp.value>=10) {
@@ -234,8 +237,8 @@ function calcule(){
 
 submit.addEventListener("click", ()=>{
   calcule()
-  
 })
+
 
 
 
