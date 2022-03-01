@@ -116,6 +116,7 @@ span{
   font-size: 16px;
   transform: translateY(0.8px) translateX(-2px);
 }
+
 .container{
   width: 95%;
   padding: 80px 5px 5px 5px;
@@ -243,4 +244,27 @@ footer button:focus{
   100%{
     transform: translateY(1px) scale(1)
   }
+}
+
+.span-moy{
+  color: black;
+}
+.span-moy-good{
+  padding: 5px 10px 4px 10px;
+  color: rgba(20, 148, 0, 1);
+  background-color: rgba(20, 148, 0, 0.10);
+  border-radius: 3.5px;
+  font-weight: 500;
+}
+.span-moy-bad{
+  padding: 5px 10px 4px 10px;
+  color: rgba(148, 0, 0, 1);
+  background-color: rgba(148, 0, 0, 0.10);
+  border-radius: 3.5px;
+  font-weight: 500;
+}
+
+h5{
+  color: rgba(116, 0, 0, 1);
+  margin-top: 15px
 }
