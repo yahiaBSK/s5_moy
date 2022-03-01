@@ -45,6 +45,7 @@ input{
   transition: 0.2s ease;
   margin-top: 10px;
   text-align: center;
+  padding: 1px 10px;
 }
 input:focus{
   background-color: white;
@@ -94,7 +95,7 @@ span{
 }
 
 #submit{
-  width: 95%;
+  width: 90%;
   background-color: rgba(0, 71, 119, 1);
   border-radius: 15px;
   border: none;
@@ -123,7 +124,7 @@ span{
   text-align: start;
   background-color: white;
   margin: auto;
-  border-radius: 20px;
+  border-radius: 15px;
   margin-top: 10px;
   text-align: center;
   margin-bottom: 10px;
@@ -134,8 +135,8 @@ span{
   background-color: rgba(20, 148, 0, 0.10);
   font-weight: 700;
   padding: 3px 10px;
-  border-radius: 3px;
-  width: 90%;
+  border-radius: 9px;
+  /*width: 90%;*/
   margin: auto;
   margin-top: 10px;
   font-size: 24px;
@@ -148,8 +149,8 @@ span{
   background-color: rgba(148, 0, 0, 0.10);
   font-weight: 700;
   padding: 3px 10px;
-  border-radius: 3px;
-  width: 90%;
+  border-radius: 9px;
+  /*width: 90%;*/
   margin: auto;
   margin-top: 10px;
   font-size: 24px;
@@ -176,10 +177,10 @@ span{
 }
 #degreeh{
   box-shadow: 0 0 0 3px #7fa3bb;
-  border-radius: 20px;
+  border-radius: 15px;
   padding: 20px;
   margin: 50px auto;
-  width: 95%;
+  width: 90%;
   margin-bottom: -90px;
   background-color: white;
 }
@@ -253,15 +254,15 @@ footer button:focus{
   padding: 5px 10px 4px 10px;
   color: rgba(20, 148, 0, 1);
   background-color: rgba(20, 148, 0, 0.10);
-  border-radius: 3.5px;
-  font-weight: 500;
+  border-radius: 5px;
+  font-weight: 700;
 }
 .span-moy-bad{
   padding: 5px 10px 4px 10px;
   color: rgba(148, 0, 0, 1);
   background-color: rgba(148, 0, 0, 0.10);
-  border-radius: 3.5px;
-  font-weight: 500;
+  border-radius: 5px;
+  font-weight: 700;
 }
 
 h5{
