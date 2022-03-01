@@ -19,13 +19,14 @@ body {
   margin-top: 20px;
 }
 img{
-  width: 110px;
-  height: 110px;
-  box-shadow: 0 0 0 3px #7fa3bb;
+  width: 95px;
+  height: 95px;
+  box-shadow: 0 0 0 2px #7fa3bb;
   border-radius: 100px;
   text-align: center;
-  margin-bottom: -70px;
-  background-color: white
+  margin-bottom: -60px;
+  background-color: white;
+  padding: 5px;
 }
 input{
   display: block;
@@ -45,13 +46,14 @@ input{
 }
 input:focus{
   background-color: white;
-  box-shadow: 0 0 0 3px rgba(0, 71, 119, 0.50);
+  box-shadow: 0 0 0 2px rgba(0, 71, 119, 0.50);
 }
 h1{
   text-align: center;
-  font-size: 25px;
+  font-size: 20px;
   color: rgba(116, 0, 0, 1);
-  line-height: 35px;
+  line-height: 30px;
+  margin-top: -10px;
 }
 #s{
   color: rgba(0, 71, 119, 1);
@@ -59,11 +61,11 @@ h1{
 hr{
   width: 200px;
   border: none;
-  background-color: rgba(0, 71, 119, 0.50);
+  background-color: rgba(0, 71, 119, 0.30);
   height: 2px;
   border-radius: 100px;
-  margin-bottom: 40px;
-  margin-top: 40px;
+  margin-bottom: 10px;
+  margin-top: 20px;
   animation: hr-animation 2s ease ;
 }
 @keyframes hr-animation{
@@ -107,7 +109,7 @@ span{
 #submit:focus{
   background-color: transparent;
   color: rgba(0, 71, 119, 1);
-  box-shadow: 0 0 0 3px rgba(0, 71, 119, 0.50);
+  box-shadow: 0 0 0 2px rgba(0, 71, 119, 0.50);
 }
 #submit i{
   font-size: 16px;
@@ -124,7 +126,7 @@ span{
   margin-top: 10px;
   text-align: center;
   margin-bottom: 10px;
-  box-shadow: 0 0 0 3px #7fa3bb;
+  box-shadow: 0 0 0 2px #7fa3bb;
 }
 .degree-good, .credit-good{
   color: rgba(20, 148, 0, 1);
@@ -172,7 +174,7 @@ span{
   margin: auto;
 }
 #degreeh{
-  box-shadow: 0 0 0 3px #7fa3bb;
+  box-shadow: 0 0 0 2px #7fa3bb;
   border-radius: 15px;
   padding: 20px;
   margin: 50px auto;
@@ -263,4 +265,29 @@ footer button:focus{
 h5{
   color: rgba(116, 0, 0, 1);
   margin-top: 15px
+}
+
+.info{
+  display: inline-flex;
+  font-size: 15px;
+}
+.info p{
+  font-weight: 700;
+  color: rgba(0, 71, 119, 1);
+  padding: 1px 8px;
+}
+.info p span{
+  color: rgba(116, 0, 0, 1);
+}
+.info p span span{
+  font-size: 12px;
+  font-weight: 400!important
+}
+
+
+#day{
+  margin-bottom: -10px;
+}
+#day span{
+  color: rgba(189, 228, 255, 1);
 }
