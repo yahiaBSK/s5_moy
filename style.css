@@ -53,7 +53,7 @@ h1{
   font-size: 20px;
   color: rgba(116, 0, 0, 1);
   line-height: 30px;
-  margin-top: -10px;
+  margin-top: 30px;
 }
 #s{
   color: rgba(0, 71, 119, 1);
@@ -290,4 +290,35 @@ h5{
 }
 #day span{
   color: rgba(189, 228, 255, 1);
+}
+.down-div{
+  margin-top: -75px;
+  width: 100%;
+  text-align: right;
+}
+#lic-btn button{
+  right: 10px;
+  width: 110px;
+  border: none;
+  outline: none;
+  height: 33px;
+  border-radius: 100px;
+  border-top-right-radius: 70px;
+  background-color: rgba(0, 71, 119, 0.80);
+  color: white;
+  letter-spacing: 1px;
+  font-weight: 500;
+  font-size: 13px;
+  transition: 0.2s ease;
+}
+#lic-btn i{
+  font-size: 15px;
+  margin-right: 5px;
+  transition: 0.2s ease;
+}
+#lic-btn button:focus{
+  border: 2px solid rgba(0, 71, 119, 0.50);
+  color: rgba(0, 71, 119, 1);
+  background-color: transparent;
+  transform: scale(0.93);
 }
