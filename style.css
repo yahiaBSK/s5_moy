@@ -21,7 +21,7 @@ body {
 img{
   width: 95px;
   height: 95px;
-  box-shadow: 0 0 0 2px #7fa3bb;
+  box-shadow: 0 0 0 1.5px #7fa3bb;
   border-radius: 100px;
   text-align: center;
   margin-bottom: -60px;
@@ -29,24 +29,23 @@ img{
   padding: 5px;
 }
 input{
-  display: block;
   border: none;
   outline: none;
-  border-radius: 10px;
+  border-radius: 7px;
   height: 40px;
   background-color: rgba(204, 204, 204, 0.40);
   width: 50%;
   margin: auto;
   font-size: 16px;
   font-weight: 500;
-  transition: 0.25s ease;
+  transition: 0.15s ease;
   margin-top: 10px;
   text-align: center;
   padding: 1px 10px;
 }
 input:focus{
   background-color: white;
-  box-shadow: 0 0 0 2px rgba(0, 71, 119, 0.50);
+  box-shadow: 0 0 0 1.5px rgba(0, 71, 119, 0.50);
 }
 h1{
   text-align: center;
@@ -110,7 +109,7 @@ span{
 #submit:focus{
   background-color: transparent;
   color: rgba(0, 71, 119, 1);
-  border: 2.5px solid rgba(0, 71, 119, 0.50);
+  box-shadow:0 0 0 1.5px rgba(0, 71, 119, 0.50);
 }
 #submit i{
   font-size: 16px;
@@ -127,7 +126,7 @@ span{
   margin-top: 10px;
   text-align: center;
   margin-bottom: 10px;
-  border: 2.5px solid #7fa3bb;
+  box-shadow: 0 0 0 1.5px #7fa3bb;
 }
 .degree-good, .credit-good{
   color: rgba(20, 148, 0, 1);
@@ -175,7 +174,7 @@ span{
   margin: auto;
 }
 #degreeh{
-  box-shadow: 0 0 0 2px #7fa3bb;
+  box-shadow: 0 0 0 1.5px #7fa3bb;
   border-radius: 15px;
   padding: 20px;
   margin: 50px auto;
@@ -322,4 +321,13 @@ h5{
   color: rgba(0, 71, 119, 1);
   background-color: transparent;
   transform: scale(0.93);
+  
+}
+
+
+.inputs{
+  display: inline;
+}
+.inputs input{
+  width: 25%
 }
