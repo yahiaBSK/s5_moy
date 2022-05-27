@@ -15,7 +15,7 @@ body{
 	transition: 0;
 }
 .container{
-	background: linear-gradient(180deg, rgba(0, 62, 117, 1), rgba(0, 117, 78, 1));
+	background: linear-gradient(180deg, rgba(0, 71, 119, 1), rgba(0, 117, 78, 1));
 	color: white;
 	padding: 15px;
 	text-align: center;
