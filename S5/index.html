@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v6.0.0/css/pro.min.css" type="text/css">
+  <meta name="theme-color" content="rgba(0, 71, 119, 1)"/>
+  <link rel="shortcut icon" href="https://i.postimg.cc/65hmpLPn/Picsart-22-02-24-23-25-11-672.png"/>
+  <title>CALCULATION DE MOYENNE S5 ELM</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9EEB1N3BW0"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-9EEB1N3BW0');
+</script>
+</head>
+
+<body>
+	
+  <img id="logo" src="https://i.postimg.cc/65hmpLPn/Picsart-22-02-24-23-25-11-672.png"/>
+  <div class="container">
+  	<div class="side_bar">
+  		<button id="side_bar_btn"><i class="fa-solid fa-bars-sort"></i></button>
+  		<div class="side_bar_con">
+  			<h1>Calculation du moyenne ELM</h1>
+  			<a href="/S5"><button>Semestre 5</button></a>
+  			<a href="/S6"><button>Semestre 6</button></a>
+  		</div>
+    </div>
+    <h1>CALCULATION DU MOYENNE <br><span id="s">S5</span><br>ELECTROMECANIQUE</h1>
+    <div class="info">
+      <p>TD: <span>40%</span></p>
+      <p>EXAMEN: <span>60%</span></p>
+      <p>TP: <span>100% <span>(tp-schema: 40%)</span></span></p>
+    </div>
+    <hr>
+    
+    <form method="post">
+    	
+    <div class="moduls annimation2">
+    <h3>Transfert thermique</h3>
+    <div class="inputs">
+    <input class="inputs" type="number" id="trans-td" placeholder="TD">
+    <input class="inputs" type="number" id="trans-examen" placeholder="EXAMEN">
+    </div>
+    <h5>Module moy: <span class="trans-moy span-moy">*</span></h5>
+    </div>
+    
+    <div class="moduls annimation1">
+    <h3>Machines Electrique</h3>
+    <div class="inputs">
+    <input type="number" id="mach-td" placeholder="TD">
+    <input type="number" id="mach-examen" placeholder="EXAMEN">
+    <input type="number" id="mach-tp" placeholder="TP">
+    </div>
+    <h5>Module moy: <span class="mach-moy span-moy">*</span></h5>
+    </div>
+    
+    <div class="moduls annimation2">
+    <h3>Schémas et appareillage</h3>
+    <div class="inputs">
+    <input type="number" id="schema-examen" placeholder="EXAMEN">
+    <input type="number" id="schema-tp" placeholder="TP">
+    </div>
+    <h5>Module moy: <span class="schema-moy span-moy">*</span></h5>
+    </div>
+   
+   <div class="moduls annimation1">
+    <h3>Systemes asservis</h3>
+    <div class="inputs">
+    <input type="number" id="systeme-td" placeholder="TD">
+    <input type="number" id="systeme-examen" placeholder="EXAMEN">
+    <input type="number" id="systeme-tp" placeholder="TP">
+    </div>
+    <h5>Module moy: <span class="syst-moy span-moy">*</span></h5>
+    </div>
+   
+   <div class="moduls annimation2">
+    <h3>Construction mecanique</h3>
+    <div class="inputs">
+    <input type="number" id="const-examen" placeholder="EXAMEN">
+    </div>
+    <h5>Module moy: <span class="const-moy span-moy">*</span></h5>
+    </div>
+   
+   <div class="moduls annimation1">
+    <h3>Electronique de puissance</h3>
+    <div class="inputs">
+    <input type="number" id="elect-td" placeholder="TD">
+    <input type="number" id="elect-examen" placeholder="EXAMEN"/>
+    <input type="number" id="elect-tp" placeholder="TP"/>
+    </div>
+    <h5>Module moy: <span class="elect-moy span-moy">*</span></h5>
+    </div>
+    
+    <div class="moduls annimation2">
+    <h3>Production d'energie electrique</h3>
+    <div class="inputs">
+    <input type="number" id="produc-examen" placeholder="EXAMEN"/>
+    </div>
+    <h5>Module moy: <span class="produc-moy span-moy">*</span></h5>
+    </div>
+    
+    <div class="moduls annimation1">
+    <h3>Materiaux electrotechnique</h3>
+    <div class="inputs">
+    <input type="number" id="mater-examen" placeholder="EXAMEN"/>
+    </div>
+    <h5>Module moy: <span class="mater-moy span-moy">*</span></h5>
+    </div>
+    
+    <div class="moduls annimation2">
+    <h3>Securite electrique</h3>
+    <div class="inputs">
+    <input type="number" id="secur-examen" placeholder="EXAMEN"/>
+    </div>
+    <h5>Module moy: <span class="secur-moy span-moy">*</span></h5>
+    </div>
+    </form>
+    
+    <button id="submit"><i class="fa-regular fa-circle-check"></i> CALCULER</button>
+    
+
+    
+  </div>
+     <div class="note">
+    <h3 id="degreeh">moyenne
+    <br>
+    <p class="degree">*</p>
+    <br>
+    <span id="credit-span">credit</span>
+    <br>
+    <p class="credit">*</p>
+    </h3>
+    </div>
+  
+  <footer>
+    <div>
+      <p>Developed & programmed by<p id="by"><i id="checked" class="fa-solid fa-badge-check"></i> Yahia Boussouak</p></p>
+      
+      <a href="https://m.facebook.com/bsk.yahia"><button><i class="fa-brands fa-facebook"></button></i></a>
+      <a href="https://github.com/yahiaBSK"><button><i class="fa-brands fa-github"></i></button></a>
+    </div>
+  </footer>
+  
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,342 +1,65 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-
-
-
-body {
-  margin: 0;
-  padding: 0;
-  background-color: white;
-  position: relative;
+body{
+	margin: 0;
+	padding: 0;
 }
+
 *{
-  box-sizing: border-box;
-  font-family: 'Roboto Condensed', sans-serif;
+	box-sizing:	border-box;
+	font-family: 'Jost', sans-serif;
+	transition: 0;
 }
-#logo{
-  display: none;
-}
-.img{
-  text-align: center;
-  margin-top: 20px;
-}
-img{
-  width: 95px;
-  height: 95px;
-  box-shadow: 0 0 0 1.5px #7fa3bb;
-  border-radius: 100px;
-  text-align: center;
-  margin-bottom: -60px;
-  background-color: white;
-  padding: 5px;
-}
-input{
-  border: none;
-  outline: none;
-  border-radius: 7px;
-  height: 40px;
-  background-color: rgba(204, 204, 204, 0.40);
-  width: 50%;
-  margin: auto;
-  font-size: 16px;
-  font-weight: 500;
-  transition: 0.15s ease;
-  margin-top: 10px;
-  text-align: center;
-  padding: 1px 10px;
-}
-input:focus{
-  background-color: white;
-  box-shadow: 0 0 0 1.5px rgba(0, 71, 119, 0.50);
-}
-h1{
-  text-align: center;
-  font-size: 20px;
-  color: rgba(116, 0, 0, 1);
-  line-height: 30px;
-  margin-top: 30px;
-  font-family: 'Poppins', sans-serif;
-}
-#s{
-  color: rgba(0, 71, 119, 1);
-  font-family: 'Poppins', sans-serif;
-}
-hr{
-  width: 200px;
-  border: none;
-  background-color: rgba(0, 71, 119, 0.30);
-  height: 2px;
-  border-radius: 100px;
-  margin-bottom: 10px;
-  margin-top: 20px;
-  animation: hr-animation 2s ease ;
-}
-@keyframes hr-animation{
-  0%{
-    width: 0;
-  }
-  100%{
-    width: 200px;
-  }
-}
-h3{
-  margin-top: 40px;
-  text-transform: uppercase;
-  color: rgba(0, 71, 119, 1);
-  margin-bottom: 10px;
-  font-size: 17px;
-}
-h3::before{
-  content: "•";
- margin-right: 5px;
- margin-left: -10px;
- color: rgba(116, 0, 0, 1);
-}
-span{
-  color: rgba(116, 0, 0, 1);
-}
-
-#submit{
-  width: 90%;
-  background-color: rgba(0, 71, 119, 1);
-  border-radius: 15px;
-  border: none;
-  height: 50px;
-  color: white;
-  font-weight: 700;
-  margin-top: 40px;
-  margin-bottom: 20px;
-  outline: none;
-  transition: 0.2s ease;
-  letter-spacing: 0.5px;
-}
-#submit:focus{
-  background-color: transparent;
-  color: rgba(0, 71, 119, 1);
-  box-shadow:0 0 0 1.5px rgba(0, 71, 119, 0.50);
-}
-#submit i{
-  font-size: 16px;
-  transform: translateY(0.8px) translateX(-2px);
-}
-
 .container{
-  width: 95%;
-  padding: 80px 5px 5px 5px;
-  text-align: start;
-  background-color: white;
-  margin: auto;
-  border-radius: 15px;
-  margin-top: 10px;
-  text-align: center;
-  margin-bottom: 10px;
-  box-shadow: 0 0 0 1.5px #7fa3bb;
-}
-.degree-good, .credit-good{
-  color: rgba(20, 148, 0, 1);
-  background-color: rgba(20, 148, 0, 0.10);
-  font-weight: 700;
-  padding: 3px 10px;
-  border-radius: 9px;
-  /*width: 90%;*/
-  margin: auto;
-  margin-top: 10px;
-  font-size: 24px;
-  opacity: 0;
-  transition: 0.3s ease;
-  height: 32px;
-}
-.degree-bad, .credit-bad{
-  color: rgba(148, 0, 0, 1);
-  background-color: rgba(148, 0, 0, 0.10);
-  font-weight: 700;
-  padding: 3px 10px;
-  border-radius: 9px;
-  /*width: 90%;*/
-  margin: auto;
-  margin-top: 10px;
-  font-size: 24px;
-  opacity: 0;
-  transition: 0.3s ease;
-  height: 32px;
-}
-.degree, .credit{
-  color: rgba(148, 0, 0, 1);
-  margin: auto;
-  padding: 3px 10px;
-  width: 90%;
-  margin-top: 10px;
-  height: 30px;
-  font-size: 24px;
-  transition: 0.3s ease;
-}
-#credit-span{
-  color: rgba(0, 71, 119, 1);
-}
-#credit-span::before{
-  content: "";
-  margin: auto;
-}
-#degreeh{
-  box-shadow: 0 0 0 1.5px #7fa3bb;
-  border-radius: 15px;
-  padding: 20px;
-  margin: 50px auto;
-  width: 90%;
-  margin-bottom: -90px;
-  background-color: white;
-}
-#degreeh::before{
-  content: "";
-  margin: auto;
+	background: linear-gradient(180deg, rgba(0, 62, 117, 1), rgba(0, 117, 78, 1));
+	color: white;
+	padding: 15px;
+	text-align: center;
+	height: 100vh;
 }
 
-footer{
-  position: absolute;
-  bottom: -22%;
-  left: 0;
-  right: 0;
-  text-align: center;
-  background-color: rgba(0, 71, 119, 1);
-  color: white;
-  font-weight: 500;
-  letter-spacing: 0.5px;
-  border-top: 2px solid rgba(0, 71, 119, 0.20);
-  box-shadow: -1px 0 0 3px rgba(0, 71, 119, 0.30);
+.title {
+	margin-top: 10vh;
 }
-footer div{
-  padding: 40px;
+.title h1{
+	font-size: 40px;
 }
-footer #by{
-  color: rgba(189, 228, 255, 1);
-  font-weight: 700;
-  transform: translateX(-5px)
+.title h1 span{
+	font-size: 16px;
+	opacity: 0.6;
 }
-footer button{
-  color: white;
-  font-size: 35px;
-  text-decoration: none;
-  outline: none;
-  padding: 7px 9px 4.5px 9.5px;
-  border-radius: 5px;
-  background-color: transparent;
-  border: none;
-  transition: 0.3s ease;
-  margin-left: -5px;
+.title h2{
+	font-size: 16px;
+	opacity: 0.6;
+	margin-top: -20px;
 }
-footer button:focus{
-  transform: scale(0.8);
-  background-color: white;
-  color: rgba(0, 71, 119, 1);
-  border-radius: 100px;
+.semester{
+	border-radius: 40px;
+	width: auto;
+	margin-top: 60px;
 }
-#checked{
-  font-size: 20px;
-  margin-left: 10px;
-  transform: translateY(1px);
+.semester button{
+	width: 60%;
+	margin-top: 15px;
+	height: 50px;
+	background-color: rgba(255, 255, 255, 0.14);
+	border: none;
+	border-radius: 22px;
+	color: white;
+	font-weight: 700;
+	letter-spacing: 0.5px;
+	transition: 0.2s;
+	font-size: 15px;
 }
-@keyframes checked-animation{
-  0%{
-    transform: translateY(1px) scale(1)
-  }
-  30%{
-    transform: translateY(1px) scale(1.5)
-  }
-  60%{
-    transform: translateY(1px) scale(0.7)
-  }
-  100%{
-    transform: translateY(1px) scale(1)
-  }
-}
-.span-moy{
-  color: black;
-}
-.span-moy-good{
-  padding: 5px 10px 4px 10px;
-  color: rgba(20, 148, 0, 1);
-  background-color: rgba(20, 148, 0, 0.10);
-  border-radius: 5px;
-  font-weight: 700;
-}
-.span-moy-bad{
-  padding: 5px 10px 4px 10px;
-  color: rgba(148, 0, 0, 1);
-  background-color: rgba(148, 0, 0, 0.10);
-  border-radius: 5px;
-  font-weight: 700;
+.semester button:hover{
+	background-color: rgba(255, 255, 255, 0.07)
 }
 
-h5{
-  color: rgba(116, 0, 0, 1);
-  margin-top: 15px
-}
-
-.info{
-  display: inline-flex;
-  font-size: 15px;
-}
-.info p{
-  font-weight: 700;
-  color: rgba(0, 71, 119, 1);
-  padding: 1px 8px;
-}
-.info p span{
-  color: rgba(116, 0, 0, 1);
-}
-.info p span span{
-  font-size: 12px;
-  font-weight: 400!important
-}
-
-
-#day{
-  margin-bottom: -10px;
-}
-#day span{
-  color: rgba(189, 228, 255, 1);
-}
-.down-div{
-  margin-top: -75px;
-  width: 100%;
-  text-align: right;
-}
-#lic-btn button{
-  right: 10px;
-  width: 110px;
-  border: none;
-  outline: none;
-  height: 33px;
-  border-radius: 100px;
-  border-top-right-radius: 70px;
-  background-color: rgba(0, 71, 119, 0.80);
-  color: white;
-  letter-spacing: 1px;
-  font-weight: 500;
-  font-size: 13px;
-  transition: 0.2s ease;
-}
-#lic-btn i{
-  font-size: 15px;
-  margin-right: 5px;
-  transition: 0.2s ease;
-}
-#lic-btn button:focus{
-  border: 2px solid rgba(0, 71, 119, 0.50);
-  color: rgba(0, 71, 119, 1);
-  background-color: transparent;
-  transform: scale(0.93);
-  
-}
-
-
-.inputs{
-  display: inline;
-}
-.inputs input{
-  width: 25%
+.semester button:focus{
+	background-color: transparent;
+	box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.50);
 }
