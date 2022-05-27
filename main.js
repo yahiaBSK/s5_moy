@@ -12,8 +12,8 @@ window.addEventListener('load', ()=>{
 		title_h1.style = "opacity: 1; transform: none";
   	title_h2_1.style = "opacity: 1; transform: none"
 	  title_h2_2.style = "opacity: 1; transform: none"
-	  btn_s5.style = "transform: scale(1)"
-	  btn_s6.style = "transform: scale(1)"
+	  btn_s5.style = "opacity: 1;transform: scale(1)"
+	  btn_s6.style = "opacity:1; transform: scale(1)"
 	
 	},200)
 })
