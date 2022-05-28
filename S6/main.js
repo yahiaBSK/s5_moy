@@ -3,9 +3,12 @@ window.addEventListener('load', ()=>{
 	
 	$(document).ready(function() {
 		$('.side_bar_component').load("../side_bar/index.html");
+		
+		
+  /* ===== loading page ==== */
+		$('.loading_page').load("loading.html");
 	})
 	
-	/* =========================== */
 })
 
 

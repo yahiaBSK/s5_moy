@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v6.0.0/css/pro.min.css" type="text/css">
+	<title></title>
+	<style>
+	
+	/*----arabic font----*/
+	@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap');
+	
+	
+		.loading_con{
+			position: fixed;
+			bottom: 0;
+			top: 0;
+			left: 0;
+			right: 0;
+			backdrop-filter: blur(10px);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			z-index: 15;
+		}
+		.loading{
+			display: block;
+			text-align: center;
+			padding: 15px;
+		}
+		.loading i{
+			font-size: 35px;
+			color: rgba(213, 209, 0, 1);
+			padding: 20px;
+			animation: i_an 3s ease-in-out infinite;
+			border-radius: 100px;
+			/*border: 0.5px solid rgba(213, 209, 0, 0.5);*/
+			width: 75px;
+			height: 75px;
+			backdrop-filter: blur(20px;)
+		}
+		@keyframes i_an{
+			0%{
+				box-shadow: 0 0 0 0px rgba(213, 209, 0, 0.5);
+			}
+			100%{
+				box-shadow: 0 0 0 17px rgba(213, 209, 0, 0);
+			}
+		}
+		.loading p{
+			font-size: 20px;
+			color: white;
+			font-weight: 500;
+			letter-spacing: 0.5px;
+		}
+		.loading #p_ar{
+			font-family: 'Cairo', sans-serif;
+			font-size: 18px;
+			direction: rtl;
+		}
+	</style>
+</head>
+
+<body>
+	
+	<div class="loading_con">
+		<div class="loading">
+			<i class="fa-regular fa-file-exclamation"></i>
+			<p>This page is still under development right now. <br>comeback after a week at least...<br>Thanks.</p>
+			<p id="p_ar">هذه الصفحة لا تزال تحت التطوير حاليا. <br>عد مجددا بعد أسبوع على الأقل...<br>شكرا على تفهمك </p>
+			<a href="../"><button>Back To Home</button></a>
+		</div>
+	</div>
+	
+</body>
+
+</html>
