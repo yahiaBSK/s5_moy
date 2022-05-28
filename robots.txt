@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://elm-s5-moy.netlify.app/sitemap.txt
