@@ -29,7 +29,7 @@
 			text-align: center;
 			padding: 15px;
 		}
-		.loading i{
+		.loading #i_1{
 			font-size: 35px;
 			color: rgba(213, 209, 0, 1);
 			padding: 20px;
@@ -59,6 +59,31 @@
 			font-size: 18px;
 			direction: rtl;
 		}
+		.loading button{
+			background-color: white;
+			color: #003E8D;
+			border: none;
+			border-radius: 5px;
+			height: 50px;
+			margin-top: 10px;
+			transition: 0.1s ease;
+			padding: 0px 20px;
+			font-weight: 500;
+			font-size: 16px;
+			box-shadow: 0px 3px 5px rgba(0,0,0,0.50)
+		}
+		.loading button #i_2{
+			font-size: 18px;
+			transform: rotate(-180deg);
+			margin-right: 5px;
+			margin-left: 0;
+			font-weight: 400;
+		}
+		.loading button:focus{
+			box-shadow: 0 0 0 4px rgba(255,255,255,0.30);
+			background-color: transparent;
+			color: white;
+		}
 	</style>
 </head>
 
@@ -66,10 +91,10 @@
 	
 	<div class="loading_con">
 		<div class="loading">
-			<i class="fa-regular fa-file-exclamation"></i>
-			<p>This page is still under development right now. <br>comeback after a week at least...<br>Thanks.</p>
-			<p id="p_ar">هذه الصفحة لا تزال تحت التطوير حاليا. <br>عد مجددا بعد أسبوع على الأقل...<br>شكرا على تفهمك </p>
-			<a href="../"><button>Back To Home</button></a>
+			<i class="fa-regular fa-file-exclamation" id="i_1"></i>
+			<p>This page is still under development right now. <br>comeback again after a week at least..<br>Thanks.</p>
+			<p id="p_ar">هذه الصفحة لا تزال قيد التطوير حاليا. <br>عد مجددا بعد أسبوع على الأقل..<br>شكرا   </p>
+			<a href="../"><button><i class="fa-light fa-arrow-right-from-bracket" id="i_2"></i> Back To Home</button></a>
 		</div>
 	</div>
 	
