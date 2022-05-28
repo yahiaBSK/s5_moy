@@ -1,11 +1,12 @@
-
-/* ====== SIDE COMPONENT ===== */
-
-$(document).ready(function() {
-	$('.side_bar_component').load("../side_bar/index.html");
+window.addEventListener('load', ()=>{
+	/* ====== SIDE COMPONENT ===== */
+	
+	$(document).ready(function() {
+		$('.side_bar_component').load("../side_bar/index.html");
+	})
+	
+	/* =========================== */
 })
-
-/* =========================== */
 
 
 
