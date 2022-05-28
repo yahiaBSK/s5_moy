@@ -1,3 +1,17 @@
+
+/* ====== SIDE COMPONENT ===== */
+
+$(document).ready(function() {
+	$('.side_bar_component').load("../side_bar/index.html");
+})
+
+/* =========================== */
+
+
+
+
+
+
 // transfert thermique
 let trans_td = document.querySelector("#trans-td")
 let trans_ex = document.querySelector("#trans-examen")
@@ -294,27 +308,6 @@ input_s.forEach(input_s=>{
 
 
 
-/* ===== OPEN AND CLOSE SIDEBAR === */
-let open_btn = document.querySelector("#side_bar_btn")
-let open_btn_i = document.querySelector('#side_bar_btn i')
-let side_bar = document.querySelector('.side_bar')
-
-open_btn.addEventListener('click', ()=>{
-	if (side_bar.style.left !== "0px") {
-		side_bar.style.left = "0px";
-		open_btn_i.className += "fa-solid fa-xmark"
-		open_btn.style = "background-color: white; color: rgba(0, 62, 117, 1)"
-	}else{
-		side_bar.style.left = "-250px";
-		open_btn_i.className += "fa-solid fa-bars-sort";
-		open_btn.style = "none"
-	}
-	side_bar.addEventListener('mouseleave', ()=>{
-			side_bar.style.left = "-250px"
-			open_btn_i.className += "fa-solid fa-bars-sort";
-	  	open_btn.style = "none"
-	})
-})
 
 
 
@@ -346,4 +339,5 @@ moduls.forEach(modul=>{
 		
 	})
 })
+
 

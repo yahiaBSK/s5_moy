@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	
+	<style>
+	body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  position: relative;
+  z-index: 10;
+}
+*{
+  box-sizing: border-box;
+  font-family: 'JOST', sans-serif;
+}
+		.side_bar{
+	height: 100vh;
+	background-color: white;
+	width: 250px;
+	position: fixed;
+	left: -250px;
+	bottom: 0;
+	top: 0;
+	transition: 0.3s ease-in-out;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 12;
+	
+}
+#side_bar_btn{
+	background-color: transparent;
+	position: absolute;
+	right: -45px;
+	border: none;
+	font-size: 25px;
+	color: white;
+	top: 5px;
+	transition: 0.5s ease;
+	border-radius: 100%;
+	width: 41px;
+	height: 40px;
+}
+#side_bar_btn:active{
+	transform: scale(0.8);
+}
+.side_bar_con {
+	padding: 5px;
+	margin-top: -100px;
+}
+.side_bar_con a{
+	outline: none;
+	text-decoration: none;
+}
+.side_bar_con h1{
+	color: rgba(0, 62, 117, 1);
+}
+.side_bar_con button{
+	width: 100%;
+	display: block;
+	border: none;
+	background: linear-gradient(210deg, rgba(0, 71, 119, 1), rgba(0, 109, 62, 1));
+	border-radius: 21px;
+	height: 45px;
+	color: white;
+	font-weight: 500;
+	margin-top: 15px;
+	outline: none;
+	transition: all 0.2s ease;
+	z-index: 13;
+}
+.side_bar_con button:focus{
+	background: none;
+	background-color: white;
+	color: rgba(0, 71, 119, 1);
+	border: 2px solid rgba(0, 62, 117, 1);
+}
+
+	</style>
+</head>
+
+<body>
+	<div class="side_bar">
+  		<button id="side_bar_btn"><i class="fa-solid fa-bars-sort"></i></button>
+  		<div class="side_bar_con">
+  			<h1>Calculation du moyenne ELM</h1>
+  			<a href="/S5"><button>Semestre 5</button></a>
+  			<a href="/S6"><button>Semestre 6</button></a>
+  		</div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+	
+	
+</body>
+	<script>
+		/* ===== OPEN AND CLOSE SIDEBAR === */
+let open_btn = document.querySelector("#side_bar_btn")
+let open_btn_i = document.querySelector('#side_bar_btn i')
+let side_bar = document.querySelector('.side_bar')
+
+open_btn.addEventListener('click', ()=>{
+	if (side_bar.style.left !== "0px") {
+		side_bar.style.left = "0px";
+		open_btn_i.className += "fa-solid fa-xmark"
+		open_btn.style = "background-color: white; color: rgba(0, 62, 117, 1)"
+	}else{
+		side_bar.style.left = "-250px";
+		open_btn_i.className += "fa-solid fa-bars-sort";
+		open_btn.style = "none"
+	}
+	side_bar.addEventListener('mouseleave', ()=>{
+			side_bar.style.left = "-250px"
+			open_btn_i.className += "fa-solid fa-bars-sort";
+	  	open_btn.style = "none"
+	})
+})
+
+	</script>
+</html>
