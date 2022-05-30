@@ -13,6 +13,7 @@ body {
 *{
   box-sizing: border-box;
   font-family: 'JOST', sans-serif;
+  outline: none!important;
 }
 #logo{
   display: none;
