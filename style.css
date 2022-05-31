@@ -7,6 +7,11 @@
 body{
 	margin: 0;
 	padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	background: linear-gradient(180deg, rgba(0, 71, 119, 1), rgba(0, 117, 78, 1));
 }
 
 *{
@@ -16,16 +21,14 @@ body{
 	outline: none!important;
 }
 .container{
-	background: linear-gradient(180deg, rgba(0, 71, 119, 1), rgba(0, 117, 78, 1));
 	color: white;
 	padding: 15px;
 	text-align: center;
-	height: 100vh;
 	overflow: hidden;
+	margin-top: -20vh;
 }
 
 .title {
-	margin-top: 10vh;
 }
 .title h1{
 	font-size: 40px;
@@ -58,7 +61,7 @@ body{
 	height: 50px;
 	background-color: rgba(255, 255, 255, 0.14);
 	border: none;
-	border-radius: 22px;
+	border-radius: 8px;
 	color: white;
 	font-weight: 700;
 	letter-spacing: 0.5px;
