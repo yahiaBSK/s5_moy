@@ -6,7 +6,7 @@ window.addEventListener('load', ()=>{
 		
 		
   /* ===== loading page ==== */
-		$('.loading_page').load("loading.html");
+	/*	$('.loading_page').load("loading.html");*/
 	})
 	
 })
@@ -16,41 +16,43 @@ window.addEventListener('load', ()=>{
 
 
 
-// transfert thermique
-let trans_td = document.querySelector("#trans-td")
-let trans_ex = document.querySelector("#trans-examen")
+// regulation 
+let regul_td = document.querySelector("#regul-td")
+let regul_ex = document.querySelector("#regul-examen")
 
-// machines
-let mach_td = document.querySelector("#mach-td")
-let mach_ex = document.querySelector("#mach-examen")
-let mach_tp = document.querySelector("#mach-tp")
+// commande des entrainement
+let comm_td = document.querySelector("#comm-td")
+let comm_ex = document.querySelector("#comm-examen")
+let comm_tp = document.querySelector("#comm-tp")
 
-// shemas
-let schema_ex = document.querySelector("#schema-examen")
-let schema_tp = document.querySelector("#schema-tp")
+// capteur et conditioneurs
+let capt_ex = document.querySelector("#capt-examen")
+let capt_tp = document.querySelector("#capt-tp")
 
-// systeme
-let syst_td = document.querySelector("#systeme-td")
-let syst_ex = document.querySelector("#systeme-examen")
-let syst_tp = document.querySelector("#systeme-tp")
+// automatismes
+let auto_td = document.querySelector("#auto-td")
+let auto_ex = document.querySelector("#auto-examen")
 
-// construction
-let const_ex = document.querySelector("#const-examen")
+// turbomachines
+let turbo_td = document.querySelector("#turbo-td")
+let turbo_ex = document.querySelector("#turbo-examen")
 
-// electronique
-let elect_td = document.querySelector("#elect-td")
-let elect_ex = document.querySelector("#elect-examen")
-let elect_tp = document.querySelector("#elect-tp")
+// tp - rgulation & automatismes
+let regul_auto_tp = document.querySelector("#regul-auto-tp")
 
-// production
-let produc_ex = document.querySelector("#produc-examen")
+// maint des syst
+let maint_ex = document.querySelector("#maint-examen")
 
-// materiaux
-let mater_ex = document.querySelector("#mater-examen")
+// introduction au moteur a combustion
+let intro_ex = document.querySelector("#intro-examen")
 
-// securite
-let secur_ex = document.querySelector("#secur-examen")
+// entreprise
+let entre_ex = document.querySelector("#entre-examen")
+ 
+// POSTER 
+let poster_tp = document.querySelector("#poster-tp")
 
+ 
 // submit 
 let submit = document.querySelector("#submit")
 
@@ -61,16 +63,17 @@ let degree = document.querySelector(".degree")
 let credit = document.querySelector(".credit")
 
 // module moy
-let trans_moy_p = document.querySelector(".trans-moy")
-let mach_moy_p = document.querySelector(".mach-moy")
-let schema_moy_p = document.querySelector(".schema-moy")
-let syst_moy_p = document.querySelector(".syst-moy")
-let const_moy_p = document.querySelector(".const-moy")
-let elect_moy_p = document.querySelector(".elect-moy")
-let produc_moy_p = document.querySelector(".produc-moy")
-let mater_moy_p = document.querySelector(".mater-moy")
-let secur_moy_p = document.querySelector(".secur-moy")
-let elect_tp_moy = document.querySelector(".elect_tp-moy")
+let regul_moy_p = document.querySelector(".regul-moy")
+let comm_moy_p = document.querySelector(".comm-moy")
+let capt_moy_p = document.querySelector(".capt-moy")
+let auto_moy_p = document.querySelector(".auto-moy")
+let turbo_moy_p = document.querySelector(".turbo-moy")
+let regul_auto_moy_p = document.querySelector(".regul-auto-moy")
+let maint_moy_p = document.querySelector(".maint-moy")
+let intro_moy_p = document.querySelector(".intro-moy")
+let entre_moy_p = document.querySelector(".entre-moy")
+let poster_moy_p = document.querySelector(".poster-moy")
+
 let inputs = document.querySelectorAll("input")
 
 
@@ -81,94 +84,105 @@ let inputs = document.querySelectorAll("input")
 function calcule(){
   
   
-  // transfere moy
-  var trans_moy = ((+trans_td.value * 0.4) + (+trans_ex.value * 0.6))
-  if (trans_moy >= 10) {
-    var trans_credit = 4
-    trans_moy_p.classList = "span-moy-good"
+  // regul moy
+  var regul_moy = ((+regul_td.value * 0.4) + (+regul_ex.value * 0.6))
+  if (regul_moy >= 10) {
+    var regul_credit = 4
+    regul_moy_p.classList = "span-moy-good"
   } else {
-    var trans_credit = 0
-    trans_moy_p.classList = "span-moy-bad"
+    var regul_credit = 0
+    regul_moy_p.classList = "span-moy-bad"
   }
   
-  // machines moy
-  var mach_moy = ((+mach_td.value * 0.4) + (+mach_ex.value * 0.6))
-  if (mach_moy >= 10) {
-    var mach_credit = 4
-    mach_moy_p.classList = "span-moy-good"
+  // commande moy
+  var comm_moy = ((+comm_td.value * 0.4) + (+comm_ex.value * 0.6))
+  if (comm_moy >= 10) {
+    var comm_credit = 4
+    comm_moy_p.classList = "span-moy-good"
   } else {
-    var mach_credit = 0
-    mach_moy_p.classList = "span-moy-bad"
+    var comm_credit = 0
+    comm_moy_p.classList = "span-moy-bad"
   }
   
-  // schema moy
-  /*var schema_moy = (+schema_ex.value)
-  if (schema_moy >= 10) {
-    var schema_credit = 3
-    schema_moy_p.classList = "span-moy-good"
+  // capteur moy
+  var capt_moy = (+capt_ex.value)
+  if (capt_moy >= 10) {
+    var capt_credit = 2
+    capt_moy_p.classList = "span-moy-good"
   } else {
-    var schema_credit = 0
-    schema_moy_p.classList = "span-moy-bad"
-  }*/
-  
-  // systeme moy
-  var syst_moy = ((+syst_td.value * 0.4) + (+syst_ex.value * 0.6))
-  if (syst_moy >= 10) {
-    var syst_credit = 4
-    syst_moy_p.classList = "span-moy-good"
-  } else {
-    var syst_credit = 0
-    syst_moy_p.classList = "span-moy-bad"
+    var capt_credit = 0
+    capt_moy_p.classList = "span-moy-bad"
   }
   
-  // const moy
-  var const_moy = (+const_ex.value)
-  if (const_moy >= 10) {
-    var const_credit = 2
-    const_moy_p.classList = "span-moy-good"
+  // automatisme moy
+  var auto_moy = ((+auto_td.value * 0.4) + (+auto_ex.value * 0.6))
+  if (auto_moy >= 10) {
+    var auto_credit = 4 
+    auto_moy_p.classList = "span-moy-good"
   } else {
-    var const_credit = 0
-    const_moy_p.classList = "span-moy-bad"
+    var auto_credit = 0
+    auto_moy_p.classList = "span-moy-bad"
   }
   
-  // elect moy
-  var elect_moy = ((+elect_td.value * 0.4) + (+elect_ex.value * 0.6))
-  if (elect_moy >= 10) {
-    var elect_credit = 4
-    elect_moy_p.classList = "span-moy-good"
+  // turbomachine moy
+  var turbo_moy = ((+turbo_td.value * 0.4) + (+turbo_ex.value * 0.6))
+  if (turbo_moy >= 10) {
+    var turbo_credit = 4
+    turbo_moy_p.classList = "span-moy-good"
   } else {
-    var elect_credit = 0
-    elect_moy_p.classList = "span-moy-bad"
+    var turbo_credit = 0
+    turbo_moy_p.classList = "span-moy-bad"
   }
   
-  // production moy
-  var produc_moy = (+produc_ex.value)
-  if (produc_moy >= 10) {
-    var produc_credit = 1
-    produc_moy_p.classList = "span-moy-good"
+  // maint des syst
+  var maint_moy = (+maint_ex.value)
+  if (maint_moy >= 10) {
+    var maint_credit = 1
+    maint_moy_p.classList = "span-moy-good"
   } else {
-    var produc_credit = 0
-    produc_moy_p.classList = "span-moy-bad"
+    var maint_credit = 0
+    maint_moy_p.classList = "span-moy-bad"
   }
   
-  // materiaux moy
-  var mater_moy = (+mater_ex.value)
-  if (mater_moy >= 10) {
-    var mater_credit = 1
-    mater_moy_p.classList = "span-moy-good"
+  // introduction au moteur a combistion moy
+  var intro_moy = (+intro_ex.value)
+  if (intro_moy >= 10) {
+    var intro_credit = 1
+    intro_moy_p.classList = "span-moy-good"
   } else {
-    var mater_credit = 0
-    mater_moy_p.classList = "span-moy-bad"
+    var intro_credit = 0
+    intro_moy_p.classList = "span-moy-bad"
   }
   
-  // securiee moy
-  var secur_moy = (+secur_ex.value)
-  if (secur_moy >= 10) {
-    var secur_credit = 1
-    secur_moy_p.classList = "span-moy-good"
+    // entreprise moy
+  var entre_moy = (+entre_ex.value)
+  if (entre_moy >= 10) {
+    var entre_credit = 1
+    entre_moy_p.classList = "span-moy-good"
   } else {
-    var secur_credit = 0
-    secur_moy_p.classList = "span-moy-bad"
+    var entre_credit = 0
+    entre_moy_p.classList = "span-moy-bad"
+  }
+  
+  // TP - REGUL & AUTO 
+  var regul_auto_moy = (+regul_auto_tp.value)
+  if (regul_auto_moy >= 10) {
+  	var regul_auto_credit = 1
+  	regul_auto_moy_p.classList = "span-moy-good"
+  } else {
+  	var regul_auto_credit = 0
+  	regul_auto_moy_p.classList = "span-moy-bad"
+  }
+  
+  
+  // poster moy
+  var poster_moy = ( +poster_tp.value )
+  if (poster_moy >= 10) {
+    var poster_credit = 4
+    poster_moy_p.classList = "span-moy-good"
+  } else {
+    var poster_credit = 0
+    poster_moy_p.classList = "span-moy-bad"
   }
   
   
@@ -176,38 +190,37 @@ function calcule(){
   
  
     // TP credit 
-  // - TP electronique
-  if (elect_tp.value>=10) {
-    var elect_tp_credit = 4
-    elect_tp_moy.classList = "span-moy-good"
+  // - TP regulation & automatismes
+  /*if (+regul_auto_tp.value>=10) {
+    regul_auto_moy_p.classList = "span-moy-good"
   }else{
-    var elect_tp_credit = 0
-    elect_tp_moy.classList = "span-moy-bad"
-  }
-  // - TP machines
-  if (mach_tp.value >= 10) {
-    var mach_tp_credit = 2
+    regul_auto_moy_p.classList = "span-moy-bad"
+  }*/
+  // - TP commandes
+  if (+comm_tp.value >= 10) {
+    var comm_tp_credit = 2
   } else {
-    var mach_tp_credit = 0
+    var comm_tp_credit = 0
   }
-  // - TP systeme
-  if (syst_tp.value >= 10) {
-    var syst_tp_credit = 2
+  // - TP capteurs
+  if (+capt_tp.value >= 10) {
+    var capt_tp_credit = 1
   } else {
-    var syst_tp_credit = 0
+    var capt_tp_credit = 0
   }
-  // - TP SHEMA
-  if (schema_tp.value >= 10) {
-    var schema_tp_credit = 1
-  } else {
-    var schema_tp_credit = 0
-  }
+
+
+
   // calcule moy uef-2-d-t
-  let moy_uef = (elect_moy*2 +mach_moy*2 +const_moy*1)/5
-  let moy_uef2 = (trans_moy*2+syst_moy*2)/4
-  let moy_uem = (+elect_tp.value*2 +  +mach_tp.value+ +syst_tp.value+ schema_tp.value)/5
-  let moy_ued = (produc_moy*1+mater_moy*1)/2
-  let moy_uet = (secur_moy*1)/1
+  let moy_uef = (regul_moy*2 +comm_moy*2 +capt_moy*1)/5
+  
+  let moy_uef2 = (auto_moy*2 +turbo_moy*2)/4
+  
+  let moy_uem = (+poster_moy*2 +  +regul_auto_tp.value+ +comm_tp.value+ +capt_tp.value)/5
+  
+  let moy_ued = (maint_moy*1+intro_moy*1)/2
+  
+  let moy_uet = (entre_moy*1)/1
   
   
   
@@ -230,7 +243,7 @@ function calcule(){
   }
   
   // print credit
-  let general_credit = ( +trans_credit+ +mach_credit+ +schema_credit+ +syst_credit+ +const_credit+ +elect_credit+ +produc_credit+ +mater_credit+ +secur_credit+ +elect_tp_credit+ +mach_tp_credit+ +syst_tp_credit+ +schema_tp_credit )
+  let general_credit = ( +regul_credit+ +comm_credit+ +capt_credit+ +auto_credit+ +turbo_credit+ +maint_credit+ +intro_credit+ +entre_credit+ +poster_credit+ +comm_tp_credit+ +capt_tp_credit+ +regul_auto_credit )
   
   
   
@@ -249,20 +262,17 @@ function calcule(){
   }
   
   // calcule modules moyenne
-  mach_moy_p.innerHTML = mach_moy
-  trans_moy_p.innerHTML = trans_moy
-  schema_moy_p.innerHTML = schema_moy
-  syst_moy_p.innerHTML = syst_moy
-  const_moy_p.innerHTML = const_moy
-  elect_moy_p.innerHTML = elect_moy
-  produc_moy_p.innerHTML = produc_moy
-  mater_moy_p.innerHTML = mater_moy
-  secur_moy_p.innerHTML = secur_moy
-  if (elect_tp.value==0) {
-  	elect_tp_moy.innerHTML = "0"
-  }else{
-  	elect_tp_moy.innerHTML = elect_tp.value
-  }
+  regul_moy_p.innerHTML = regul_moy
+  comm_moy_p.innerHTML = comm_moy
+  capt_moy_p.innerHTML = capt_moy
+  auto_moy_p.innerHTML = auto_moy
+  turbo_moy_p.innerHTML = turbo_moy
+  maint_moy_p.innerHTML = maint_moy
+  intro_moy_p.innerHTML = intro_moy
+  entre_moy_p.innerHTML = entre_moy
+  poster_moy_p.innerHTML = poster_moy
+  regul_auto_moy_p.innerHTML = regul_auto_moy
+
   
 }
 
