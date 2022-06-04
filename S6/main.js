@@ -167,7 +167,7 @@ function calcule(){
   // TP - REGUL & AUTO 
   var regul_auto_moy = (+regul_auto_tp.value)
   if (regul_auto_moy >= 10) {
-  	var regul_auto_credit = 1
+  	var regul_auto_credit = 2
   	regul_auto_moy_p.classList = "span-moy-good"
   } else {
   	var regul_auto_credit = 0
