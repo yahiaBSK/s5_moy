@@ -1,4 +1,0 @@
-User-agent: *
-Disallow: 
-
-Sitemap: https://elm-s5-moy.netlify.app/sitemap.xml
