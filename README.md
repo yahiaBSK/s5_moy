@@ -1,1 +1,1 @@
-https://elm-s5-moy.netlify.app
+https://elm-moy.rf.gd
